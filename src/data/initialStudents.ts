@@ -1,0 +1,267 @@
+import { Student, SchoolId } from '../types';
+
+export const INITIAL_SMP_STUDENTS: Student[] = [
+  {
+    id: 'SMP-REG-2026-001',
+    noRegistrasi: 'PPDB-SMP-001',
+    namaLengkap: 'Muhammad Rayhan Hafiz',
+    nisn: '0123456781',
+    nik: '3273011205120001',
+    jenisKelamin: 'Laki-Laki',
+    tempatLahir: 'Bandung',
+    tanggalLahir: '2012-05-12',
+    agama: 'Islam',
+    alamat: 'Jl. Terusan Buah Batu No. 45, Bandung',
+    noTelepon: '081234112233',
+    email: 'rayhan.hafiz@gmail.com',
+    pasFotoUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=300',
+    asalSekolah: 'SD IT Al Muawanah',
+    tahunLulus: 2026,
+    nilaiRapor: 92.5,
+    prestasi: 'Hafiz Al-Qur\'an 3 Juz & Juara 1 MQA Tingkat Kota (2025)',
+    jalurPendaftaran: 'Prestasi',
+    jurusanPilihan: 'Tahfidz Al-Qur\'an & Keagamaan',
+    statusPenerimaan: 'Diterima',
+    tanggalDaftar: '2026-06-01',
+    namaAyah: 'H. Lukman Hakim, Lc.',
+    pekerjaanAyah: 'Dosen / Pengajar',
+    namaIbu: 'Hj. Maryam Rahmah, S.Ag.',
+    pekerjaanIbu: 'Ibu Rumah Tangga',
+    noHpOrtu: '081122334455',
+    penghasilanOrtu: 'Rp 7.500.000 - Rp 10.000.000',
+    dokumen: {
+      kk: { id: 'doc-smp1-kk', name: 'KK_Rayhan.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      akta: { id: 'doc-smp1-akta', name: 'Akta_Rayhan.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      ijazahSkl: { id: 'doc-smp1-skl', name: 'SKL_SDIT.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      pasFoto: { id: 'doc-smp1-foto', name: 'Foto_Rayhan.jpg', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      sertifikat: { id: 'doc-smp1-sertif', name: 'Sertifikat_Tahfidz_3Juz.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' }
+    },
+    evaluasiAi: {
+      skorKelengkapan: 98,
+      statusKelayakan: 'Layak',
+      rekomendasi: 'Calon siswa sangat potensial untuk Program Tahfidz Unggulan SMP IT Al Muawanah. Rekam hafalan 3 Juz terverifikasi.',
+      catatanVerifikator: ['Hafalan Al-Qur\'an 3 Juz terverifikasi Tim Syahadah.', 'Dokumen pendaftaran sangat lengkap.'],
+      keunggulan: ['Sertifikat Tahfidz 3 Juz resmi', 'Rata-rata Rapor SD 92.5'],
+      evaluatedAt: '2026-06-01 09:30'
+    },
+    catatanSekolah: 'Sudah diuji kelancaran hafalan hafiz 3 juz.'
+  },
+  {
+    id: 'SMP-REG-2026-002',
+    noRegistrasi: 'PPDB-SMP-002',
+    namaLengkap: 'Siti Aisyah Humaira',
+    nisn: '0124567892',
+    nik: '3273015508120002',
+    jenisKelamin: 'Perempuan',
+    tempatLahir: 'Bandung',
+    tanggalLahir: '2012-08-15',
+    agama: 'Islam',
+    alamat: 'Jl. Soekarno Hatta No. 120, Bandung',
+    noTelepon: '085722334455',
+    email: 'aisyah.humaira@gmail.com',
+    pasFotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300',
+    asalSekolah: 'SD Negeri 1 Bandung',
+    tahunLulus: 2026,
+    nilaiRapor: 90.0,
+    prestasi: 'Juara 2 Olimpiade Sains IPA SD Tingkat Kota (2025)',
+    jalurPendaftaran: 'Prestasi',
+    jurusanPilihan: 'Unggulan Science & Math',
+    statusPenerimaan: 'Diterima',
+    tanggalDaftar: '2026-06-02',
+    namaAyah: 'Ahmad Subagja, S.Si.',
+    pekerjaanAyah: 'Wiraswasta',
+    namaIbu: 'Nurul Hidayah, S.Pd.',
+    pekerjaanIbu: 'Guru SD',
+    noHpOrtu: '085799001122',
+    penghasilanOrtu: 'Rp 5.000.000 - Rp 7.500.000',
+    dokumen: {
+      kk: { id: 'doc-smp2-kk', name: 'KK_Aisyah.pdf', status: 'Sesuai', uploadedAt: '2026-06-02' },
+      akta: { id: 'doc-smp2-akta', name: 'Akta_Aisyah.pdf', status: 'Sesuai', uploadedAt: '2026-06-02' },
+      ijazahSkl: { id: 'doc-smp2-skl', name: 'SKL_SDN1.pdf', status: 'Sesuai', uploadedAt: '2026-06-02' },
+      pasFoto: { id: 'doc-smp2-foto', name: 'Foto_Aisyah.jpg', status: 'Sesuai', uploadedAt: '2026-06-02' }
+    },
+    evaluasiAi: {
+      skorKelengkapan: 95,
+      statusKelayakan: 'Layak',
+      rekomendasi: 'Memenuhi syarat tinggi untuk kelas Unggulan Science & Math SMP IT Al Muawanah.',
+      catatanVerifikator: ['Prestasi OSN IPA Terverifikasi.', 'Pendidikan karakter siap dididik.'],
+      keunggulan: ['Juara OSN IPA SD', 'Nilai Rapor IPA & Matematika 94+'],
+      evaluatedAt: '2026-06-02 11:00'
+    }
+  },
+  {
+    id: 'SMP-REG-2026-003',
+    noRegistrasi: 'PPDB-SMP-003',
+    namaLengkap: 'Bilal Ramadhan',
+    nisn: '0129876543',
+    nik: '3273012010120003',
+    jenisKelamin: 'Laki-Laki',
+    tempatLahir: 'Cimahi',
+    tanggalLahir: '2012-10-20',
+    agama: 'Islam',
+    alamat: 'Jl. Amir Machmud No. 88, Cimahi',
+    noTelepon: '081388990011',
+    email: 'bilal.ramadhan@gmail.com',
+    pasFotoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300',
+    asalSekolah: 'SD Islam Al Azhar Bandung',
+    tahunLulus: 2026,
+    nilaiRapor: 87.2,
+    prestasi: '',
+    jalurPendaftaran: 'Zonasi',
+    jurusanPilihan: 'Bahasa & Komunikasi Global',
+    statusPenerimaan: 'Proses Verifikasi',
+    tanggalDaftar: '2026-06-03',
+    namaAyah: 'Budi Santoso',
+    pekerjaanAyah: 'Karyawan Swasta',
+    namaIbu: 'Dewi Kartika',
+    pekerjaanIbu: 'Wiraswasta',
+    noHpOrtu: '081377889900',
+    penghasilanOrtu: 'Rp 5.000.000 - Rp 7.500.000',
+    dokumen: {
+      kk: { id: 'doc-smp3-kk', name: 'KK_Bilal.pdf', status: 'Sesuai' },
+      akta: { id: 'doc-smp3-akta', name: 'Akta_Bilal.pdf', status: 'Sesuai' },
+      ijazahSkl: { id: 'doc-smp3-skl', name: 'SKL_AlAzhar.pdf', status: 'Sesuai' },
+      pasFoto: { id: 'doc-smp3-foto', name: 'Foto_Bilal.jpg', status: 'Sesuai' }
+    }
+  }
+];
+
+export const INITIAL_SMA_STUDENTS: Student[] = [
+  {
+    id: 'SMA-REG-2026-001',
+    noRegistrasi: 'PPDB-SMA-001',
+    namaLengkap: 'Ahmad Faiz Pratama',
+    nisn: '0087123491',
+    nik: '3273011205080003',
+    jenisKelamin: 'Laki-Laki',
+    tempatLahir: 'Bandung',
+    tanggalLahir: '2008-05-12',
+    agama: 'Islam',
+    alamat: 'Jl. Ir. H. Juanda No. 142, Dago, Coblong, Kota Bandung',
+    noTelepon: '081234567890',
+    email: 'faiz.pratama@gmail.com',
+    pasFotoUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=300',
+    asalSekolah: 'SMP IT Al Muawanah',
+    tahunLulus: 2026,
+    nilaiRapor: 91.8,
+    prestasi: 'Juara 1 OSN Matematika Tingkat Kota & Hafiz 5 Juz (2025)',
+    jalurPendaftaran: 'Prestasi',
+    jurusanPilihan: 'IPA / MIPA',
+    jurusanSekunder: 'Teknik Komputer & Jaringan',
+    statusPenerimaan: 'Diterima',
+    tanggalDaftar: '2026-06-01',
+    namaAyah: 'H. Bambang Pratama, M.T.',
+    pekerjaanAyah: 'Pegawai Negeri Sipil',
+    namaIbu: 'Hj. Siti Rahmawati, S.Pd.',
+    pekerjaanIbu: 'Guru',
+    noHpOrtu: '081122334455',
+    penghasilanOrtu: 'Rp 7.500.000 - Rp 10.000.000',
+    dokumen: {
+      kk: { id: 'doc-sma1-kk', name: 'Kartu_Keluarga.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      akta: { id: 'doc-sma1-akta', name: 'Akta_Lahir.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      ijazahSkl: { id: 'doc-sma1-skl', name: 'SKL_SMPIT.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      pasFoto: { id: 'doc-sma1-foto', name: 'Foto_Faiz.jpg', status: 'Sesuai', uploadedAt: '2026-06-01' },
+      sertifikat: { id: 'doc-sma1-sertif', name: 'Sertifikat_OSN.pdf', status: 'Sesuai', uploadedAt: '2026-06-01' }
+    },
+    evaluasiAi: {
+      skorKelengkapan: 98,
+      statusKelayakan: 'Layak',
+      rekomendasi: 'Lulusan internal SMP IT Al Muawanah dengan prestasi akademis dan hafalan Al-Qur\'an sangat baik. Sangat direkomendasikan untuk Jurusan IPA / MIPA Unggulan SMA IT Al Muawanah.',
+      catatanVerifikator: [
+        'Siswa alumni SMP IT Al Muawanah dengan rekam jejak akhlak terpuji.',
+        'Sertifikat OSN & Syahadah Tahfidz tervalidasi.'
+      ],
+      keunggulan: ['Alumni SMP IT Al Muawanah (Jalur Unggulan Direct Intake)', 'Hafiz 5 Juz Al-Qur\'an'],
+      evaluatedAt: '2026-06-01 10:15'
+    },
+    catatanSekolah: 'Lulusan internal SMP IT Al Muawanah - Bebas Ujian Masuk TPA.'
+  },
+  {
+    id: 'SMA-REG-2026-002',
+    noRegistrasi: 'PPDB-SMA-002',
+    namaLengkap: 'Anindya Putri Kirana',
+    nisn: '0089456123',
+    nik: '3174025109080001',
+    jenisKelamin: 'Perempuan',
+    tempatLahir: 'Jakarta',
+    tanggalLahir: '2008-09-11',
+    agama: 'Islam',
+    alamat: 'Jl. Cempaka Putih Tengah No. 28, Jakarta Pusat',
+    noTelepon: '085711223344',
+    email: 'anindya.putri@yahoo.com',
+    pasFotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300',
+    asalSekolah: 'SMP Negeri 1 Bandung',
+    tahunLulus: 2026,
+    nilaiRapor: 89.4,
+    prestasi: 'Juara 2 Debat Bahasa Inggris FLS2N (2025)',
+    jalurPendaftaran: 'Zonasi',
+    jurusanPilihan: 'IPA / MIPA',
+    jurusanSekunder: 'IPS / Soshum',
+    statusPenerimaan: 'Diterima',
+    tanggalDaftar: '2026-06-02',
+    namaAyah: 'Drs. Hendra Kirana',
+    pekerjaanAyah: 'Karyawan Swasta',
+    namaIbu: 'Dra. Maya Indah',
+    pekerjaanIbu: 'Wiraswasta',
+    noHpOrtu: '085788990011',
+    penghasilanOrtu: 'Rp 10.000.000 - Rp 15.000.000',
+    dokumen: {
+      kk: { id: 'doc-sma2-kk', name: 'KK_Anindya.pdf', status: 'Sesuai', uploadedAt: '2026-06-02' },
+      akta: { id: 'doc-sma2-akta', name: 'Akta_Anindya.pdf', status: 'Sesuai', uploadedAt: '2026-06-02' },
+      ijazahSkl: { id: 'doc-sma2-skl', name: 'SKL_Anindya.pdf', status: 'Sesuai', uploadedAt: '2026-06-02' },
+      pasFoto: { id: 'doc-sma2-foto', name: 'PasFoto_Anindya.jpg', status: 'Sesuai', uploadedAt: '2026-06-02' }
+    },
+    evaluasiAi: {
+      skorKelengkapan: 95,
+      statusKelayakan: 'Layak',
+      rekomendasi: 'Berkas pendaftaran lengkap. Sangat berpotensi untuk Jurusan IPA SMA IT Al Muawanah.',
+      catatanVerifikator: ['Jarak domisili dekat dengan SMA IT Al Muawanah.'],
+      keunggulan: ['Prestasi Debat Bahasa Inggris FLS2N'],
+      evaluatedAt: '2026-06-02 11:20'
+    }
+  },
+  {
+    id: 'SMA-REG-2026-003',
+    noRegistrasi: 'PPDB-SMA-003',
+    namaLengkap: 'Zhafira Nur Annisa',
+    nisn: '0085236974',
+    nik: '3273026102080005',
+    jenisKelamin: 'Perempuan',
+    tempatLahir: 'Bandung',
+    tanggalLahir: '2008-02-21',
+    agama: 'Islam',
+    alamat: 'Jl. Buah Batu No. 210, Bandung',
+    noTelepon: '082144556677',
+    email: 'zhafira.annisa@gmail.com',
+    pasFotoUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=300',
+    asalSekolah: 'SMP IT Al Muawanah',
+    tahunLulus: 2026,
+    nilaiRapor: 93.0,
+    prestasi: 'Hafiz 10 Juz Al-Qur\'an',
+    jalurPendaftaran: 'Prestasi',
+    jurusanPilihan: 'Tahfidz Al-Qur\'an & Keagamaan',
+    statusPenerimaan: 'Diterima',
+    tanggalDaftar: '2026-06-03',
+    namaAyah: 'Ust. Farhan Siddiq',
+    pekerjaanAyah: 'Mubaligh / Pengajar',
+    namaIbu: 'Amina Salma',
+    pekerjaanIbu: 'Guru',
+    noHpOrtu: '082199001122',
+    penghasilanOrtu: 'Rp 5.000.000 - Rp 7.500.000',
+    dokumen: {
+      kk: { id: 'doc-sma3-kk', name: 'KK_Zhafira.pdf', status: 'Sesuai' },
+      akta: { id: 'doc-sma3-akta', name: 'Akta_Zhafira.pdf', status: 'Sesuai' },
+      ijazahSkl: { id: 'doc-sma3-skl', name: 'SKL_Zhafira.pdf', status: 'Sesuai' },
+      pasFoto: { id: 'doc-sma3-foto', name: 'Foto_Zhafira.jpg', status: 'Sesuai' }
+    }
+  }
+];
+
+export const INITIAL_STUDENTS = INITIAL_SMA_STUDENTS;
+
+export const getInitialStudentsBySchool = (schoolId: SchoolId): Student[] => {
+  if (schoolId === 'smp_it') {
+    return INITIAL_SMP_STUDENTS;
+  }
+  return INITIAL_SMA_STUDENTS;
+};

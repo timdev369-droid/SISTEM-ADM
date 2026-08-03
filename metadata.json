@@ -1,0 +1,6 @@
+{
+  "name": "Arsip Data Siswa Al Muawanah",
+  "description": "Sistem pengarsipan data & dokumen digital siswa multi-lembaga untuk SMP IT Al Muawanah & SMA IT Al Muawanah dengan rekapitulasi berkas, analisis AI Gemini, cetak kartu/rekap, dan ekspor data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
